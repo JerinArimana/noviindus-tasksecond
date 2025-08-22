@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+@theme {
+  --font-script: Great Vibes, cursive;
+  --color-grayDark: #1C3141;
+  --color-lightGray: #5C5C5C;
+  --color-hashGray:#CECECE;
+  /* --font-inter: Inter, sans-serif;
+  --font-cursive:'Great Vibes' */
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+
+  font-family: "Inter", sans-serif;
+}
